@@ -1,9 +1,9 @@
 ## AP Java ##
 ### Instructor ###
 Victor Kaiser-Pendergrast<br>
-v.kaiser.pendergrast@gmail.com<br>
-GitHub.com/victorkp<br>
-plus.google.com/+VictorKaiserPendergrast
+- v.kaiser.pendergrast@gmail.com<br>
+- GitHub.com/victorkp<br>
+- plus.google.com/+VictorKaiserPendergrast
 
 ## Announcements ##
 Corrections on the assignment due Wednesday, September 3, 2014
