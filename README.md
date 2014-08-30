@@ -1,8 +1,11 @@
 ## AP Java ##
 ### Instructor ###
 Victor Kaiser-Pendergrast
+
 v.kaiser.pendergrast@gmail.com
+
 GitHub.com/victorkp
+
 plus.google.com/+VictorKaiserPendergrast
 
 ## Announcements ##
