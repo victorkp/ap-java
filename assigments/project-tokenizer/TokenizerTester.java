@@ -8,10 +8,10 @@ public class TokenizerTester {
 
 		Tokenizer singleTokenizer = new Tokenizer("e", "Tokenizers are useful");
 
-		System.out.print("Testing isSeparatorChar('e'): ");
-		System.out.println( singleTokenizer.isSeparatorChar('e') ? "PASSED" : "FAILED" );
-		System.out.print("Testing isSeparatorChar('a'): ");
-		System.out.println( !singleTokenizer.isSeparatorChar('a') ? "PASSED" : "FAILED" );
+		System.out.print("Testing isSeparatorCharacter('e'): ");
+		System.out.println( singleTokenizer.isSeparatorCharacter('e') ? "PASSED" : "FAILED" );
+		System.out.print("Testing isSeparatorCharacter('a'): ");
+		System.out.println( !singleTokenizer.isSeparatorCharacter('a') ? "PASSED" : "FAILED" );
 
 		testGetNextToken(singleTokenizer, "Tok");
 		testGetNextToken(singleTokenizer, "niz");
@@ -20,8 +20,8 @@ public class TokenizerTester {
 		testGetNextToken(singleTokenizer, "ful");
 		testGetNextToken(singleTokenizer, null);
 
-		System.out.print("Testing resetToFirst(): ");
-		singleTokenizer.resetToFirst();
+		System.out.print("Testing resetToFirstToken(): ");
+		singleTokenizer.resetToFirstToken();
 		System.out.println(singleTokenizer.getNextToken().equals("Tok") ? "PASSED" : "FAILED");
 
 		// Multiple character separator tests
@@ -30,10 +30,10 @@ public class TokenizerTester {
 
 		Tokenizer multipleTokenizer = new Tokenizer("arged", "Tokenizers are useful");
 
-		System.out.print("Testing isSeparatorChar('e'): ");
-		System.out.println( multipleTokenizer.isSeparatorChar('e') ? "PASSED" : "FAILED" );
-		System.out.print("Testing isSeparatorChar('a'): ");
-		System.out.println( !multipleTokenizer.isSeparatorChar('a') ? "PASSED" : "FAILED" );
+		System.out.print("Testing isSeparatorCharacter('e'): ");
+		System.out.println( multipleTokenizer.isSeparatorCharacter('e') ? "PASSED" : "FAILED" );
+		System.out.print("Testing isSeparatorCharacter('a'): ");
+		System.out.println( multipleTokenizer.isSeparatorCharacter('a') ? "PASSED" : "FAILED" );
 
 		testGetNextToken(multipleTokenizer, "Tok");
 		testGetNextToken(multipleTokenizer, "niz");
@@ -42,14 +42,14 @@ public class TokenizerTester {
 		testGetNextToken(multipleTokenizer, "ful");
 		testGetNextToken(multipleTokenizer, null);
 
-		System.out.print("Testing resetToFirst(): ");
-		multipleTokenizer.resetToFirst();
+		System.out.print("Testing resetToFirstToken(): ");
+		multipleTokenizer.resetToFirstToken();
 		System.out.println(multipleTokenizer.getNextToken().equals("Tok") ? "PASSED" : "FAILED");
 		
 		
 		System.out.println("\n\nCommon errors:\n\t* Not returning null when there are no more tokens and getNextToken() is called");
 		System.out.println("\tUsing the String.split() improperly (remember that each individual character in the separator String needs to be considered to be a separator");
-		System.out.println("\tNot properly checking every character in the separator string when isSeparatorChar('e') is called");
+		System.out.println("\tNot properly checking every character in the separator string when isSeparatorCharacter('e') is called");
 	}
 
 	private static void testGetNextToken(Tokenizer tokenizer, String expected) {
