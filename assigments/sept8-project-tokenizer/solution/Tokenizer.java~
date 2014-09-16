@@ -17,14 +17,12 @@ public class Tokenizer {
 	public String getNextToken() {
 		// If processIndex >= tokenString length, there's nothing
 		// left to look for tokens in
-		
 		if(processIndex >= tokenString.length()) {
 			return null;
 		}
 
 		String token = "";
-		int i;
-		for(i = processIndex; i < tokenString.length(); i++) {
+		for(int i = processIndex; i < tokenString.length(); i++) {
 			if(isSeparatorCharacter(tokenString.charAt(i))) {
 				// End of a token
 				break;
@@ -33,11 +31,11 @@ public class Tokenizer {
 				token += tokenString.charAt(i);
 			}
 		}
-		
+
 		// Set processIndex so that next time getNextToken() is called,
 		// it will begin after the separator
 		processIndex = i + 1;
-		
+
 		// Check if the token is blank
 		// (cases where separator characters are adjacent)
 		if(token.isEmpty()) {
@@ -49,7 +47,7 @@ public class Tokenizer {
 	}
 
 	public boolean isSeparatorCharacter(char c) {
-		return (separatorString.indexOf(c) != -1);
+		return (tokenString.indexOf(c) != -1);
 	}
 
 	public void resetToFirstToken() {
@@ -60,4 +58,3 @@ public class Tokenizer {
 	}
 
 }
-
