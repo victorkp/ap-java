@@ -7,6 +7,9 @@ Victor Kaiser-Pendergrast<br>
 
 ## Announcements ##
 
+September 22 Assignment
+- The assignment has been posted [here](assignments/sept22-project-school)
+
 Sptember 12 Quiz Solutions
 - The solutions to the quiz on September 12 are [here](quizzes-and-tests/september-12/)
 - The solutions we covered in class on September 15 are [here](class-notes/september15/september15.pdf)
