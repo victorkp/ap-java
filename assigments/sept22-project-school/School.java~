@@ -1,7 +1,5 @@
 package edu.school;
 
-import java.util.ArrayList;
-
 public class School {
 
 	private ArrayList<Classroom> classrooms;
