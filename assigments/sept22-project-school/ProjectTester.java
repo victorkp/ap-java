@@ -32,12 +32,15 @@ public class ProjectTester {
 		classC.addStudent(studD);
 		classC.addStudent(studE);
 
+		school.addClassroom(classA);
+		school.addClassroom(classB);
+		school.addClassroom(classC);
 
 		System.out.println("Classroom Tests");
 		printTest("getClassName", classA.getClassName().equals("Visual Basic"));
 		printTest("getNumberOfStudents", classA.getNumberOfStudents() == 3);
 		printTest("hasStudent - true", classA.hasStudent(studA));
-		printTest("hasStudent - false", classA.hasStudent(studD));
+		printTest("hasStudent - false", !classA.hasStudent(studD));
 		classC.removeStudent(studE);
 		printTest("removeStudent", !classC.hasStudent(studE));
 		printTest("getNumberOfSeniors", classB.getNumberOfSeniors() == 3);
