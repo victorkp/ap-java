@@ -22,7 +22,7 @@ public class ProjectTester {
 
 		classA.addStudent(studA);
 		classA.addStudent(studB);
-		classA.addSttudent(studC);
+		classA.addStudent(studC);
 
 		classB.addStudent(studB);
 		classB.addStudent(studC);
@@ -47,7 +47,7 @@ public class ProjectTester {
 		printTest("getNumberOfClassrooms", school.getNumberOfClassrooms() == 3);
 		printTest("getLargestClassroom", (school.getLargestClassroom() == classA || school.getLargestClassroom() == classB));
 		printTest("mostStudentsInOneClass", school.mostStudentsInOneClass() == 3);
-		printTest("getAverageNumberOfStudents", school.getAverageNumberOfStudents == ((double)8)/3);
+		printTest("getAverageNumberOfStudents", school.getAverageNumberOfStudents() == ((double)8)/3);
 
 		System.out.print("\tgetClassesWithStudent: ");
 		ArrayList<Classroom> classesWithStudent = school.getClassesWithStudent(studC);
@@ -58,7 +58,7 @@ public class ProjectTester {
 		}
 	}
 
-	private void printTest(String test, boolean pass) {
+	private static void printTest(String message, boolean pass) {
 		System.out.println("\tTesting " + message + ": " (pass ? "passed" : "failed");
 	}
 
