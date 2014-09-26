@@ -34,7 +34,7 @@ public class ProjectTester {
 
 
 		System.out.println("Classroom Tests");
-		printTest("getClassName", classA.getClassName.equals("Visual Basic"));
+		printTest("getClassName", classA.getClassName().equals("Visual Basic"));
 		printTest("getNumberOfStudents", classA.getNumberOfStudents() == 3);
 		printTest("hasStudent - true", classA.hasStudent(studA));
 		printTest("hasStudent - false", classA.hasStudent(studD));
@@ -59,7 +59,7 @@ public class ProjectTester {
 	}
 
 	private static void printTest(String message, boolean pass) {
-		System.out.println("\tTesting " + message + ": " (pass ? "passed" : "failed");
+		System.out.println("\tTesting " + message + ": " + (pass ? "passed" : "failed"));
 	}
 
 }
