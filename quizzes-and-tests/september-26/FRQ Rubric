@@ -1,0 +1,19 @@
+Test 1: FRQ Rubric
+
+Part A - 50 Points Total
+	10 Points - Construct ArrayList
+	10 Points - Loop through employees
+	15 Points - if employee in different state
+	5 Points - return employees
+	5 Points - works correctly 
+
+
+Part B - 20 Points Total
+	10 Points - Loop through EmployeeList
+	5 Points - return Employee
+	5 Points - works correctly
+
+Part C - 30 Points Total
+	10 Points - Loop through EmployeeList
+	10 Points - Calculates average for those in the zip code
+	10 Points - Works Correctly
