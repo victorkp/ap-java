@@ -58,5 +58,10 @@ public class Student {
 		return super.toString() +"\nName: " + name;
 	}
 
+	@Override
+	public boolean equals(Object o) {
+
+	}
+
 }
 
